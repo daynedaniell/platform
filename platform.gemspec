@@ -22,9 +22,13 @@ Gem::Specification.new do |s|
 
   s.add_dependency "bcrypt", "3.1.7"
 
+  s.add_dependency "dynamic_form", "1.1.4"
+
   s.add_development_dependency "sqlite3"
 
   s.add_development_dependency "rspec-rails", "3.0.1"
 
   s.add_development_dependency "capybara", "2.3.0"
+
+
 end

@@ -1,4 +1,5 @@
 require "warden"
+require "dynamic_form"
 
 module Platform
   class Engine < ::Rails::Engine
