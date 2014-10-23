@@ -2,6 +2,10 @@
 <html>
 <head>
  <title>Platform</title>
+ <% if user_signed_in? %>
+Signed in as <%= current_user.email %>
+<% end %>
+
  <% flash.each do |k,v| %>
  <div class='flash <%= k %>'><%= v %></div>
  <% end %>
