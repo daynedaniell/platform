@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
- <title>Platform</title>
- <% if user_signed_in? %>
-Signed in as <%= current_user.email %>
-<% end %>
+	<title>Platform</title>
+	<% if user_signed_in? %>
+	Signed in as <%= current_user.email %>
+	<% end %>
 
- <% flash.each do |k,v| %>
- <div class='flash <%= k %>'><%= v %></div>
- <% end %>
+	<% flash.each do |k,v| %>
+	<div class='flash <%= k %>'><%= v %></div>
+	<% end %>
 
-  <%= stylesheet_link_tag    "platform/application", media: "all" %>
-  <%= javascript_include_tag "platform/application" %>
-  <%= csrf_meta_tags %>
+	<%= stylesheet_link_tag    "platform/application", media: "all" %>
+	<%= javascript_include_tag "platform/application" %>
+	<%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+	<%= yield %>
 
 </body>
 </html>

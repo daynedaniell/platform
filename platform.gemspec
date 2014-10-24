@@ -30,5 +30,7 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency "capybara", "2.3.0"
 
+  s.add_development_dependency "factory_girl", "4.4.0"
+
 
 end
